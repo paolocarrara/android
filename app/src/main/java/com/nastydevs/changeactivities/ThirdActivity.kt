@@ -3,8 +3,7 @@ package com.nastydevs.changeactivities
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.TextView
-import org.w3c.dom.Text
+import kotlinx.android.synthetic.main.activity_third.*
 
 class ThirdActivity : AppCompatActivity() {
     public var name: String = ""
@@ -45,13 +44,8 @@ class ThirdActivity : AppCompatActivity() {
     }
 
     private fun setViewValues () {
-        val nameTextView = findViewById<TextView>(R.id.name)
         nameTextView.text = this.name
-
-        val ageTextView = findViewById<TextView>(R.id.age)
         ageTextView.text = this.age.toString()
-
-        val genderTextView = findViewById<TextView>(R.id.gender)
         genderTextView.text = if (this.male) {
             "male"
         } else {
