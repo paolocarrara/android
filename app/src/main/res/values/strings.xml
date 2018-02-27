@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Change Activities</string>
+    <string name="first_activity_title">I\'m like home</string>
+    <string name="second_activity_title">Second Activity</string>
+    <string name="third_activity_title">I received parameters</string>
+    <string name="fourth_activity_title">I came like a crazy activity</string>
 </resources>
