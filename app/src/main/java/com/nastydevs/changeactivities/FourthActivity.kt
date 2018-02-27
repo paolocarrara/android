@@ -22,6 +22,7 @@ class FourthActivity : AppCompatActivity() {
         super.onPause()
     }
 
+    // https://stackoverflow.com/questions/30284627/how-to-show-and-hide-actionbar-with-appcompat-v-7
     fun goToNextActivity (view: View) {
         val intent = Intent(this, FifthActivity::class.java)
         startActivity(intent)
