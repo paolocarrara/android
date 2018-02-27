@@ -1,8 +1,10 @@
 package com.nastydevs.changeactivities
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import kotlinx.android.synthetic.main.activity_third.*
 
 class ThirdActivity : AppCompatActivity() {
@@ -51,5 +53,10 @@ class ThirdActivity : AppCompatActivity() {
         } else {
             "female"
         }
+    }
+
+    fun goToNextActivity (view: View) {
+        val intent = Intent(this, FourthActivity::class.java)
+        startActivity(intent)
     }
 }

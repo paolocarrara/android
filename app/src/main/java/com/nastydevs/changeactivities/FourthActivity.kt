@@ -1,0 +1,22 @@
+package com.nastydevs.changeactivities
+
+import android.support.v7.app.AppCompatActivity
+import android.os.Bundle
+
+class FourthActivity : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_fourth)
+
+        overridePendingTransition(R.anim.crazy, R.anim.hold)
+    }
+
+    override fun onPause() {
+        // Whenever this activity is paused (i.e. looses focus because another activity is started etc)
+        // Override how this activity is animated out of view
+        // The new activity is kept still and this activity is pushed out to the left
+        overridePendingTransition(R.anim.hold, R.anim.push_out_to_left)
+        super.onPause()
+    }
+}
