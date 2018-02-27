@@ -7,7 +7,28 @@
     tools:context="com.nastydevs.changeactivities.FourthActivity">
 
     <TextView
+        android:id="@+id/fourthActvtIntroductionTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="asdfg"/>
+        android:text="I'm the fourth activity, welcome to my kingdom!"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/fourthActvtInstructionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/fourthActvtIntroductionTextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="To proceed, click next, it's pretty obvious.."/>
+
+    <Button
+        android:id="@+id/fourthActvtGoToNextActivityButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next (click me)"
+        android:onClick="goToNextActivity"
+        app:layout_constraintTop_toBottomOf="@id/fourthActvtInstructionTextView"/>
 </android.support.constraint.ConstraintLayout>
