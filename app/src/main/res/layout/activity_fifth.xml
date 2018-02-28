@@ -7,11 +7,91 @@
     tools:context="com.nastydevs.changeactivities.FifthActivity">
 
     <TextView
+        android:id="@+id/fifthActvtIntroduction"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="I don't have an action bar :("
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        app:layout_constraintTop_toBottomOf="@+id/fifthActvtIntroduction">
+
+        <Button
+            android:id="@+id/fifthActvtBlueButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="changeColor"
+            android:tag="#0000FF"
+            android:layout_columnSpan="1"
+            android:text="Blue"/>
+
+        <Button
+            android:id="@+id/fifthActvtRedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="changeColor"
+            android:tag="#FF0000"
+            android:layout_columnSpan="1"
+            android:text="Red"/>
+
+        <Button
+            android:id="@+id/fifthActvtGreenButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="changeColor"
+            android:tag="#00FF00"
+            android:layout_columnSpan="1"
+            android:text="Green"/>
+
+        <Button
+            android:id="@+id/fifthActvtYellowButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="changeColor"
+            android:tag="#FFFF33"
+            android:layout_columnSpan="1"
+            android:text="Yellow"/>
+
+        <Button
+            android:id="@+id/fifthActvtPinkButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="changeColor"
+            android:tag="#FF66FF"
+            android:layout_columnSpan="1"
+            android:text="Pink"/>
+
+        <Button
+            android:id="@+id/fifthActvtWhiteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="changeColor"
+            android:tag="#FFFFFF"
+            android:layout_columnSpan="1"
+            android:text="White"/>
+
+        <Button
+            android:id="@+id/fifthActvtBlackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="changeColor"
+            android:tag="#000000"
+            android:layout_columnSpan="1"
+            android:text="Black"/>
+
+        <Button
+            android:id="@+id/fifthActvtDarkBlueButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="changeColor"
+            android:tag="#001933"
+            android:layout_columnSpan="1"
+            android:text="Dark Blue"/>
+    </GridLayout>
 
 </android.support.constraint.ConstraintLayout>
